@@ -4,7 +4,7 @@ const myTeam = (team) => {
 
     const genManager = (manager) => {
       return `
-          <div class="card employee-card">
+          <div class="card employee-card shadow p-3 mb-5 bg-white rounded">
           <div class="card-header">
               <h2 class="card-title">${manager.getName()}</h2>
               <h3 class="card-title"><i class="far fa-angry mr-2"></i>${manager.getTitle()}</h3>
@@ -23,7 +23,7 @@ const myTeam = (team) => {
     // create the html for engineers
     const genEngineer = (engineer) => {
       return `
-          <div class="card employee-card">
+          <div class="card employee-card shadow p-3 mb-5 bg-white rounded">
       <div class="card-header">
           <h2 class="card-title">${engineer.getName()}</h2>
           <h3 class="card-title"><i class="fas fa-ruler-combined mr-2"></i>${engineer.getTitle()}</h3>
@@ -42,7 +42,7 @@ const myTeam = (team) => {
     // create the html for interns
     const genIntern = (intern) => {
       return `
-          <div class="card employee-card">
+          <div class="card employee-card shadow p-3 mb-5 bg-white rounded">
       <div class="card-header">
           <h2 class="card-title">${intern.getName()}</h2>
           <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getTitle()}</h3>
@@ -61,7 +61,7 @@ const myTeam = (team) => {
 // creates the html for deadWeight
 const gendeadweight = (deadweight) => {
     return `
-        <div class="card employee-card">
+        <div class="card employee-card shadow p-3 mb-5 bg-white rounded">
     <div class="card-header">
         <h2 class="card-title">${deadweight.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-weight-hanging mr-2"></i>${deadweight.getTitle()}</h3>
@@ -126,12 +126,12 @@ const gendeadweight = (deadweight) => {
   <body>
       <div class="container-fluid">
           <div class="row">
-              <div class="col-12 jumbotron mb-3 team-heading">
-                  <h1 class="text-center">My Team</h1>
+              <div class="col-12 jumbotron mb-3 team-heading shadow p-3 mb-5 bg-white rounded ">
+                  <h1 class="text-center text-white bg-dark">My Team</h1>
               </div>
           </div>
       </div>
-      <div class="container">
+      <div class="container ">
           <div class="row">
               <div class="team-area col-12 d-flex justify-content-center">
                   ${myTeam(team)}
