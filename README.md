@@ -15,5 +15,5 @@
 
   ## License type: MIT
 
-![link to video](https://watch.screencastify.com/v/NypdkxlLBQcoSMUc1Cb0)
-  
+
+## Link to walkthrough video:  https://watch.screencastify.com/v/NypdkxlLBQcoSMUc1Cb0
