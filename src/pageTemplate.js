@@ -80,35 +80,41 @@ const gendeadweight = (deadweight) => {
 
 
 
-    const html = [];
-  
-    html.push(
+    const htmlPage = [];
+  // Pushing values to the html array
+    htmlPage.push(
       team
+
         .filter((employee) => employee.getTitle() === "Manager")
         .map((manager) => genManager(manager))
     );
-    html.push(
+    htmlPage.push(
       team
+
         .filter((employee) => employee.getTitle() === "Engineer")
         .map((engineer) => genEngineer(engineer))
         .join("")
     );
-    html.push(
+
+    htmlPage.push(
       team
+
         .filter((employee) => employee.getTitle() === "Intern")
         .map((intern) => genIntern(intern))
         .join("")
     );
-    html.push(
+    htmlPage.push(
         team
+
           .filter((employee) => employee.getTitle() === "Deadweight")
           .map((deadweight) => gendeadweight(deadweight))
           .join("")
       );
-    return html.join("");
+    return htmlPage.join("");
   };
   
   // export function to generate entire page
+
   module.exports = (team) => {
     return `
       <!DOCTYPE html>

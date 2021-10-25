@@ -1,12 +1,11 @@
 
-
+// imports 
 const inquirer = require("inquirer");
 const fs = require("fs");
 const myTeam = require("./src/pageTemplate");
 
 
 // all of the modules created in lib folder
-
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
 const Manager = require("./lib/manager");
@@ -128,7 +127,7 @@ const questions = async () => {
 async function promptQuestions() {
   await questions()
     
-  
+  // creates choice for adding new memebers or generate html
   const addMemberAns = await inquirer
     .prompt([
       {
@@ -146,12 +145,7 @@ async function promptQuestions() {
 }  
 
 promptQuestions();
-
+// writes html file to dist folder
 function createTeam () {
-  console.log("new guy", newTeamMembersData)
-  fs.writeFileSync(
-    "./dist/index.html",
-    myTeam(newTeamMembersData),
-    "utf-8"
-  );
+  fs.writeFileSync("./dist/index.html",myTeam(newTeamMembersData), "utf-8" );
 }
