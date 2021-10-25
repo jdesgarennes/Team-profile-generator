@@ -15,12 +15,5 @@
 
   ## License type: MIT
 
-
-
- ## Table Of Contents
- [Title:](#Title)
- [Description:](#Description)
- [Usage:](#Usage)
- [Questions:](#Questions)
-
+![link to video](https://watch.screencastify.com/v/NypdkxlLBQcoSMUc1Cb0)
   
